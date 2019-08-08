@@ -24,62 +24,94 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand|Sacramento&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body>
-    <header>
-      <h1>All About Cats</h1>
-      <h2>Just another Cat-Page</h2>
+  <body
+    class="container-fluid"
+    style="background-color: #dcdfe4; font-family: 'Sacramento', cursive;"
+  >
+    <!-- header row -->
+    <header
+      class="row shadow-sm rounded mb-3"
+      style="background-color: #dffdfb;"
+    >
+      <!-- col 1 h1-->
+      <div class="col-12 col-sm-6">
+        <h1 style="font-family: 'Quicksand', sans-serif;">
+          Rick Sanchez
+        </h1>
+      </div>
+      <!-- col 2 h2-->
+      <div class="col">
+        <h2 style="font-size: 120%; font-family: 'Quicksand', sans-serif;">
+          Tolle Biografie
+        </h2>
+      </div>
     </header>
-    <img
-      src="https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-      alt="cat photo"
-    />
-    <article>
-      <h3 class="bg-danger">what to know about cats</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat
-        voluptatum eius corruptfoi nihil sed, eligendi doloribus libero animi
-        molestias, at soluta quia placeat magnam vel obcaecati atque sequi.
-      </p>
-      <p>
-        Tempore <b>deserunt</b> <i>commodi</i> voluptatum rem asperiores
-        voluptates maxime laboriosam rerum necessitatibus repudiandae delectus
-        eius accusantium, <mark>ipsum distinctio esse</mark> assumenda quod
-        earum!
-      </p>
-    </article>
-    <aside>
-      <ol>
-        <li>Independent</li>
-        <li>Night owls</li>
-        <li>Scratchy</li>
-      </ol>
-    </aside>
-    <footer>
-      <a href="https://en.wikipedia.org/wiki/Cat">wikipedia</a>
-      <a
-        href="https://www.gettyimages.de/fotos/funny-cats?sort=mostpopular&mediatype=photography&phrase=funny%20cats"
-      >
-        funny cat pics
-      </a>
-      <a href="#">Home</a>
-      <form action="">
-        <fieldset>
-          <legend>Für Newsletter eintragen</legend>
-          <div>
-            <label for="newsletter">email</label>
-            <input type="text" id="newsletter" />
+    <!-- first pic row with some cards -->
+    <div class="row" style="font-family: 'Quicksand', sans-serif;">
+      <!-- first column in pic row with picture -->
+      <img
+        class="col-12 col-lg-6 img-fluid"
+        src="img/rick.jpeg"
+        alt="a picture of Rick Sanchez"
+      />
+
+      <!-- secound column in pic row with chield-row inside-->
+      <div class="col-12 col-lg-6">
+        <!-- chield row in pic-row with some cards showing beneath or beside picture-->
+        <div style="font-family: 'Quicksand', sans-serif;" class="row">
+          <!-- card 1-->
+          <div class="col-6 my-2">
+            <div style="background-color: #dffdfb;" class="card shadow rounded">
+              <div class="card-body">
+                <h5 class="card-title">alcoholism</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              </div>
+            </div>
           </div>
-          <div>
-            <label for="terms">bin mit allem einverstanden</label>
-            <input type="checkbox" id="terms" />
+          <!-- card 2-->
+          <div class="col-6 my-2">
+            <div style="background-color: #dffdfb;" class="card shadow rounded">
+              <div class="card-body">
+                <h5 class="card-title">scientist</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              </div>
+            </div>
           </div>
-          <div>
-            <button type="submit">GET CAT NEWS</button>
+          <!-- card 3-->
+          <div class="col-4 my-2">
+            <div style="background-color: #dffdfb;" class="card shadow rounded">
+              <div class="card-body">
+                <h5 class="card-title">genius</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              </div>
+            </div>
           </div>
-        </fieldset>
-      </form>
-    </footer>
+          <!-- card 4-->
+          <div class="col-4 my-2">
+            <div style="background-color: #dffdfb;" class="card shadow rounded">
+              <div class="card-body">
+                <h5 class="card-title">reckless</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              </div>
+            </div>
+          </div>
+          <!-- card 5-->
+          <div class="col-4 my-2">
+            <div style="background-color: #dffdfb;" class="card shadow rounded">
+              <div class="card-body">
+                <h5 class="card-title">..burp...</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
