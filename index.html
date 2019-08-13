@@ -5,298 +5,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Blinker&display=swap"
+      rel="stylesheet"
+    />
     <title>Rick Sanchez</title>
   </head>
-  <body>
+  <body class="page">
     <!-- header part -->
-    <header>
-      <div>
-        <!-- col 1 h1-->
-        <div>
-          <h1>
-            Rick Sanchez
-          </h1>
-        </div>
-        <!-- col 2 navbar-->
-        <div>
-          <nav>
-            <a href="#contact">contact</a>
-            <a href="#table">info</a>
-          </nav>
-        </div>
-      </div>
+    <header class="header">
+      <h1>
+        Rick Sanchez
+      </h1>
+      <nav>
+        <a class="header__nav-link" href="#contact">contact</a>
+        <a class="header__nav-link" href="#table">info</a>
+      </nav>
     </header>
 
     <!-- main part -->
-    <main>
-      <!-- row with pic and some cards -->
-      <article>
-        <!-- column with picture and paragraph -->
+    <main class="content">
+      <!-- picture paragraph and lists -->
+      <article class="stage">
+        <!-- picture and paragraph -->
         <div>
           <!-- first column in pic row with picture -->
-          <img src="images/rick.jpeg" alt="a picture of Rick Sanchez" />
+          <img
+            class="stage__picture"
+            src="images/rick.jpeg"
+            alt="a picture of Rick Sanchez"
+          />
 
-          <!-- text below picture -->
-          <p>
+          <!-- paragraph below picture -->
+          <p class="stage__intro">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias enim
             dolor omnis eum. Ratione, voluptatibus possimus quisquam voluptas et
             sapiente.
           </p>
         </div>
+        <!-- section with 2 lists -->
+        <section>
+          <!-- article with list 1 -->
+          <article class="stage__cards">
+            <header class="cards__header">
+              <h1>Überschrift</h1>
+            </header>
+            <ul class="cards__list">
+              <li class="cards__list__item">alcoholism</li>
+              <li class="cards__list__item">scientist</li>
+              <li class="cards__list__item">genius</li>
+              <li class="cards__list__item">reckless</li>
+              <li class="cards__list__item">...burp...</li>
+            </ul>
+          </article>
+          <!-- article with list 2 -->
+          <article class="stage__cards">
+            <header class="cards__header">
+              <h1>Überschrift</h1>
+            </header>
+            <ul class="cards__list">
+              <li class="cards__list__item">alcoholism</li>
+              <li class="cards__list__item">scientist</li>
+              <li class="cards__list__item">genius</li>
+              <li class="cards__list__item">reckless</li>
+              <li class="cards__list__item">...burp...</li>
+            </ul>
+          </article>
 
-        <!-- secound column in pic row with chield-rows inside-->
-        <div>
-          <!-- row holding two card-sections-->
-          <div>
-            <section>
-              <!-- chield row 1 in pic-row with some cards showing beneath or beside picture-->
-              <article>
-                <header>
-                  <h1>Überschrift</h1>
-                </header>
-                <!-- row for cards -->
-                <div>
-                  <!-- card 1-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>alcoholism</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 2-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>scientist</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 3-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>genius</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 4-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>reckless</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 5-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>...burp...</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </section>
-            <section>
-              <!-- chield row 2 in pic-row with some cards showing beneath or beside picture-->
-              <article>
-                <header>
-                  <h1>Überschrift</h1>
-                </header>
-                <!-- row for cards -->
-                <div>
-                  <!-- card 1-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>alcoholism</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 2-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>scientist</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 3-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>genius</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 4-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>reckless</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 5-->
-                  <div>
-                    <div>
-                      <div>
-                        <h3>...burp...</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </section>
-          </div>
-        </div>
-      </article>
-
-      <!-- row contact data -->
-      <article id="contact">
-        <div>
-          <div>
-            <p>
-              <span>&#9742;</span>
-              <a>137-137-137-137</a>
-            </p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <p>
-              <span>&#9993;</span>
-              <a>rick_sanchez@C-137.com</a>
-            </p>
-          </div>
-        </div>
+          <!--  contact data -->
+          <article class="contact" id="contact">
+            <div class="contact__item">
+              <img
+                class="icon-svg"
+                src="images/phone.svg"
+                alt="icon for phone number"
+              />
+              <a class="contact__link" href="tel:137-137-137-137"
+                >137-137-137-137</a
+              >
+            </div>
+            <div class="contact__item">
+              <img
+                class="icon-svg"
+                src="images/mail.svg"
+                alt="icon for phone number"
+              />
+              <a class="contact__link" href="mailto:rick_sanchez@C-137.com"
+                >rick_sanchez@C-137.com</a
+              >
+            </div>
+          </article>
+        </section>
       </article>
 
       <!-- row with 3 images-->
-      <article>
-        <div>
-          <img src="images/rick2.jpg" alt="another pic of rick sanchez" />
-          <h3>just rick</h3>
-        </div>
-        <div>
+      <article class="social">
+        <article class="social__article">
           <img
+            class="social__picture"
+            src="images/rick2.jpg"
+            alt="another pic of rick sanchez"
+          />
+          <h3 class="social__pic-title">just rick</h3>
+        </article>
+        <article class="social__article">
+          <img
+            class="social__picture"
             src="images/new_pickle_rick.jpeg"
             alt="rick transformed into a pickle"
           />
-          <h3>pickle rick</h3>
-        </div>
-        <div>
-          <img src="images/tiny_rick.jpg" alt="TINY RICK" />
-          <h3>tiny rick</h3>
-        </div>
+          <h3 class="social__pic-title">pickle rick</h3>
+        </article>
+        <article class="social__article">
+          <img
+            class="social__picture"
+            src="images/tiny_rick.jpg"
+            alt="TINY RICK"
+          />
+          <h3 class="social__pic-title">tiny rick</h3>
+        </article>
       </article>
 
-      <!-- row with table and text-->
-      <article id="table">
-        <!-- first column with child row for table-->
-        <div>
-          <!-- chield-row with table -->
-          <div>
-            <div>
-              <article>
-                <header>
-                  <h1>
-                    SOME INFORMATIONS
-                  </h1>
-                </header>
+      <div class="details">
+        <article class="details__article">
+          <header class="details__header">
+            <h1>
+              SOME INFORMATIONS
+            </h1>
+          </header>
 
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>
-                        Main aliases:
-                      </td>
-                      <td>
-                        Rick, Grandpa Rick, Grandpa, Dad
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Species</td>
-                      <td>Human</td>
-                    </tr>
-                    <tr>
-                      <td>Age</td>
-                      <td>70</td>
-                    </tr>
-                    <tr>
-                      <td>Status</td>
-                      <td>
-                        Alive (probably drunk)
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Job</td>
-                      <td>
-                        <ul>
-                          <li>Scientist</li>
-                          <li>Inventor</li>
-                          <li>Arms salesman</li>
-                          <li>Store Owner (briefly)</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Place of origin</td>
-                      <td>
-                        Earth (Dimension C-137)
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Family</td>
-                      <td>
-                        <ul>
-                          <li>Beth Smith (daughter)</li>
-                          <li>Jerry Smith (son-in-law)</li>
-                          <li>Summer Smith (granddaughter)</li>
-                          <li>Morty Smith (grandson)</li>
-                          <li>Morty, Jr. (great-grandson)</li>
-                          <li>Mrs. Sanchez (ex-wife)</li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-            </div>
-          </div>
-        </div>
-        <!-- secound column with some more text -->
-        <div>
-          <article>
-            <header>
-              <h1>
-                SOME MORE TEXT TO READ
-              </h1>
-            </header>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              impedit id perferendis, maiores, nam accusantium magnam
-              consectetur quas iste in rem. Ex nesciunt maiores autem
-              perferendis harum ipsa nostrum magnam. Nobis doloremque laudantium
-              magnam perspiciatis accusamus, nihil aliquam error alias
-              voluptatem ut culpa esse atque architecto facere quaerat,
-              temporibus impedit! Omnis iste molestiae officiis ipsum obcaecati.
-              Harum molestias delectus mollitia! Officiis iure deserunt eligendi
-              aliquid nostrum, illum aspernatur voluptate atque nihil quia
-              laudantium quaerat quidem in sequi odit amet vel et perferendis
-              facere modi dolores, libero officia quasi! Minus, quisquam!
-              Debitis velit corporis alias dolorem expedita unde ipsa suscipit
-              cum molestiae ea quo similique, odit voluptatum id ab voluptatibus
-            </p>
-          </article>
-        </div>
-      </article>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  Main aliases:
+                </td>
+                <td>
+                  Rick, Grandpa Rick, Grandpa, Dad
+                </td>
+              </tr>
+              <tr>
+                <td>Species</td>
+                <td>Human</td>
+              </tr>
+              <tr>
+                <td>Age</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>Status</td>
+                <td>
+                  Alive (probably drunk)
+                </td>
+              </tr>
+              <tr>
+                <td>Job</td>
+                <td>
+                  <ul>
+                    <li>Scientist</li>
+                    <li>Inventor</li>
+                    <li>Arms salesman</li>
+                    <li>Store Owner (briefly)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Place of origin</td>
+                <td>
+                  Earth (Dimension C-137)
+                </td>
+              </tr>
+              <tr>
+                <td>Family</td>
+                <td>
+                  <ul>
+                    <li>Beth Smith (daughter)</li>
+                    <li>Jerry Smith (son-in-law)</li>
+                    <li>Summer Smith (granddaughter)</li>
+                    <li>Morty Smith (grandson)</li>
+                    <li>Morty, Jr. (great-grandson)</li>
+                    <li>Mrs. Sanchez (ex-wife)</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="details__article">
+          <header class="details__header">
+            <h1>
+              SOME MORE TEXT TO READ
+            </h1>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            impedit id perferendis, maiores, nam accusantium magnam consectetur
+            quas iste in rem. Ex nesciunt maiores autem perferendis harum ipsa
+            nostrum magnam. Nobis doloremque laudantium magnam perspiciatis
+            accusamus, nihil aliquam error alias voluptatem ut culpa esse atque
+            architecto facere quaerat, temporibus impedit! Omnis iste molestiae
+            officiis ipsum obcaecati. Harum molestias delectus mollitia!
+            Officiis iure deserunt eligendi aliquid nostrum, illum aspernatur
+            voluptate atque nihil quia laudantium quaerat quidem in sequi odit
+            amet vel et perferendis facere modi dolores, libero officia quasi!
+            Minus, quisquam! Debitis velit corporis alias dolorem expedita unde
+            ipsa suscipit cum molestiae ea quo similique, odit voluptatum id ab
+            voluptatibus
+          </p>
+        </article>
+      </div>
     </main>
 
     <!-- footer part-->
-    <footer>
+    <footer class="footer">
       <div>
         <div>
           <p>
